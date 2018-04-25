@@ -1,0 +1,8 @@
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteRule ^e-(.*)$ editproject.php?slug=$1 [L]
+RewriteCond %{REQUEST_FILENAME} !-d [NC]
+RewriteCond %{REQUEST_FILENAME} !-f [NC]
+RewriteRule ^v-(.*)$ viewproject.php?slug=$1 [QSA,L]
+RewriteRule ^f-(.*)$ file.php?name=$1 [QSA,L]
+</IfModule>

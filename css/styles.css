@@ -1,0 +1,1761 @@
+@charset "UTF-8";
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 200;
+  height: 60px;
+  padding: 0 11px 0 30px;
+  background: #1f2c44;
+  color: white;
+}
+.header button {
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+}
+.header button span {
+  margin-left: 5px;
+}
+.header .dropdown-menu {
+  border-radius: 0;
+}
+.header .dropdown-menu > li > a {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+.header .dropdown-toggle {
+  background: transparent;
+  border: none;
+  font-size: 1.5rem;
+  padding: 8px 20px;
+  margin-top: 11px;
+}
+.header .dropdown-toggle .fa {
+  padding-right: 3px;
+}
+.header form {
+  float: right;
+  width: 250px;
+  font-family: "Roboto", sans-serif;
+}
+.header form .input-group-addon {
+  background: white;
+  border: none;
+  border-radius: 0;
+}
+.header form .input-group-addon .fa {
+  color: #c4a699;
+}
+.header form .form-control {
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+}
+.header h1 {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 3rem;
+  float: left;
+  line-height: 60px;
+}
+
+.alert {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+}
+.alert .fa {
+  padding-right: 8px;
+}
+
+.dashboard {
+  padding: 40px 0 60px 0;
+}
+.dashboard .tab-content {
+  margin-top: 60px;
+  padding: 0 0 0 280px;
+  color: black;
+}
+.dashboard .tab-content .issues {
+  background: white;
+  width: 85%;
+  padding: 20px;
+  margin-bottom: 30px;
+}
+.dashboard .tab-content .issues h5 {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 2.2rem;
+  margin-bottom: 25px;
+}
+.dashboard .tab-content .issues h6 {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.7rem;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+.dashboard .tab-content .issues p {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.4rem;
+}
+.dashboard .tab-content .issues p a {
+  font-weight: bold;
+}
+.dashboard .tab-content .issues p span {
+  font-size: 1.4rem;
+}
+.dashboard .tab-content .project {
+  font-family: "Roboto", sans-serif;
+  overflow: hidden;
+  margin-bottom: 20px;
+  background: white;
+  width: 85%;
+}
+.dashboard .tab-content .project .title {
+  padding: 20px;
+}
+.dashboard .tab-content .project .title h3 {
+  margin: 0;
+  font-weight: bold;
+  color: black;
+  font-size: 2.2rem;
+}
+.dashboard .tab-content .project .title h3 .label {
+  font-size: 1.5rem;
+  margin-top: 2px;
+}
+.dashboard .tab-content .project .body {
+  padding: 10px 25px;
+  color: #656565;
+  font-family: "Roboto", sans-serif;
+}
+.dashboard .tab-content .project .body b {
+  font-weight: normal;
+}
+.dashboard .tab-content .project .body a {
+  display: inline-block;
+  margin-right: 25px;
+  font-weight: bold;
+}
+.dashboard .tab-content .project .body .view {
+  display: inline-block;
+  padding: 8px 35px;
+  background: #ccc;
+  color: black;
+  font-weight: bold;
+  margin: 5px 0;
+}
+.dashboard .tab-content .project .body button {
+  font-weight: bold;
+  background: none;
+  border: none;
+  color: #337ab7;
+}
+.dashboard .tab-content .project.open-project {
+  border-top: 4px solid #5cb85c;
+}
+.dashboard .tab-content .project.closed-project {
+  border-top: 4px solid #d9534c;
+}
+.dashboard .tab-content form {
+  font-family: "Roboto", sans-serif;
+  background: white;
+  padding: 30px;
+}
+.dashboard .tab-content form label {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+.dashboard .tab-content form label b {
+  color: red;
+}
+.dashboard .tab-content form .form-control {
+  font-size: 1.4rem;
+  border-radius: 0;
+  box-shadow: none;
+  color: black;
+}
+.dashboard .tab-content form p.error {
+  margin-top: 10px;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 1.4rem;
+  text-align: center;
+}
+.dashboard .tab-content form a {
+  display: block;
+  height: 40px;
+  border: 1px solid white;
+  font-weight: bold;
+  line-height: 40px;
+}
+.dashboard .tab-content form input, .dashboard .tab-content form select {
+  height: 40px;
+}
+.dashboard .tab-content form input:focus, .dashboard .tab-content form select:focus {
+  border-color: #555;
+  outline: none;
+  box-shadow: none;
+}
+.dashboard .tab-content form textarea:focus {
+  border-color: #555;
+  outline: none;
+  box-shadow: none;
+}
+.dashboard .tab-content form button {
+  font-weight: bold;
+  font-size: 1.7rem;
+  padding: 8px 40px;
+  height: 40px;
+  background: #415A77;
+  border: 1px solid #415A77;
+  color: white;
+}
+.dashboard .tab-content form button:hover {
+  background: white;
+  color: #415A77;
+}
+.dashboard .tab-content form button.disabled {
+  cursor: not-allowed;
+  background: #ddd;
+  color: #aaa;
+  border-color: #ddd;
+}
+.dashboard .tab-content form .form-group.phase2 {
+  display: none;
+}
+.dashboard .tab-content form .form-group.newcustomer {
+  display: none;
+}
+.dashboard .tab-content h2 {
+  width: 85%;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  margin: 0 0 20px 0;
+  font-size: 2.5rem;
+}
+
+nav.nav-menu {
+  width: 250px;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 100;
+  padding-top: 61px;
+  background: #2a3b5c;
+}
+
+.nav-pills > li {
+  border: none;
+  margin: 0;
+  float: none;
+  display: block;
+  font-weight: normal;
+}
+.nav-pills > li > a {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.4rem;
+  padding: 15px 30px;
+  font-weight: 600;
+  border-radius: 0;
+  color: white;
+  border-bottom: 1px solid #384f7c;
+}
+.nav-pills > li.active > a {
+  border-bottom: 1px solid #384f7c;
+  background: #337AB7;
+  color: white;
+}
+.nav-pills > li:hover > a {
+  background: #337AB7;
+}
+.nav-pills > li + li {
+  margin-left: 0;
+}
+
+.viewproject {
+  padding: 60px 0;
+  font-family: "Roboto", sans-serif;
+}
+.viewproject h2 {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  margin: 30px 0 15px 0;
+}
+.viewproject .edit-table {
+  background: white;
+  border-color: #337AB7;
+  border-left: none;
+  border-right: none;
+}
+.viewproject .edit-table tbody {
+  border: none;
+}
+.viewproject .edit-table th, .viewproject .edit-table td {
+  border-left: none;
+  border-right: none;
+  border-color: #337AB7;
+}
+.viewproject .edit-table > thead {
+  border: none;
+  margin: 0;
+  background: #337AB7;
+  color: white;
+  font-size: 1.5rem;
+}
+.viewproject .edit-table > thead > tr > td, .viewproject .edit-table > thead > tr > th {
+  border-bottom-width: 1px;
+}
+.viewproject .tab-content {
+  margin-top: 60px;
+  padding: 0 0 0 280px;
+  color: black;
+}
+.viewproject .tab-content .back {
+  background: #1B263B;
+  font-weight: bold;
+  color: white;
+  padding: 10px 35px;
+  font-size: 1.5rem;
+}
+.viewproject .tab-content .back:hover {
+  background: #0D1B2A;
+  text-decoration: none;
+}
+.viewproject .tab-content .this-project {
+  background: white;
+}
+.viewproject .tab-content .this-project h3 {
+  background: #337AB7;
+  color: white;
+  padding: 10px 25px;
+  font-weight: bold;
+  font-size: 1.8rem;
+  margin-top: 0;
+}
+.viewproject .tab-content .this-project h5 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 0 25px;
+  margin: 15px 0 5px 0;
+}
+.viewproject .tab-content .this-project p {
+  font-size: 1.3rem;
+  line-height: 1.8rem;
+  padding: 0 25px;
+}
+.viewproject .tab-content .this-project h4 {
+  background: #337AB7;
+  color: white;
+  padding: 10px 25px;
+  font-weight: bold;
+}
+.viewproject .tab-content .this-project .milestone {
+  margin: 20px 0 0 0;
+  border-bottom: 1px solid #ccc;
+  padding: 0 0 15px 0;
+}
+.viewproject .tab-content .this-project .milestone div.comment {
+  margin-top: 15px;
+  padding: 0 15px;
+}
+.viewproject .tab-content .this-project .milestone div.comment p.comment {
+  font-size: 1.3rem;
+  line-height: 2.3rem;
+  color: #656565;
+  margin-left: 15px;
+  font-weight: bold;
+}
+.viewproject .tab-content .this-project .milestone div.comment p.comment .fa {
+  margin-right: 8px;
+}
+.viewproject .tab-content .this-project .milestone:last-child {
+  border-bottom: none;
+}
+.viewproject .tab-content .this-project .milestone button {
+  background: transparent;
+  border: none;
+  color: #337ab7;
+  float: right;
+  margin: 5px 15px 0 0;
+}
+.viewproject .tab-content .this-project .milestone .clearfix {
+  clear: both;
+}
+.viewproject .tab-content .this-project .milestone h5 {
+  font-weight: bold;
+  font-size: 1.7rem;
+}
+.viewproject .tab-content .this-project .milestone .task {
+  margin-left: 15px;
+  padding: 0 25px;
+}
+.viewproject .tab-content .this-project .milestone .task p {
+  margin: 0;
+  font-size: 1.3rem;
+  line-height: 1.8rem;
+}
+.viewproject .tab-content .this-project .milestone .task h6 {
+  font-size: 1.4rem;
+  line-height: 1.9rem;
+  margin-bottom: 5px;
+}
+.viewproject .tab-content .this-project .milestone .task h6 .label {
+  font-size: 1.3rem;
+}
+.viewproject .tab-content .key {
+  width: 400px;
+  border: 1px solid black;
+  padding: 15px;
+  margin-bottom: 15px;
+  background: white;
+}
+.viewproject .tab-content .key p {
+  margin: 10px 0 0 0;
+  font-weight: bold;
+}
+.viewproject .tab-content .key p:first-child {
+  margin-top: 0;
+}
+.viewproject .tab-content .key p b {
+  position: relative;
+  top: 8px;
+  display: inline-block;
+  width: 150px;
+  height: 3px;
+}
+.viewproject .tab-content .key p.to-do b {
+  background: #ddd;
+}
+.viewproject .tab-content .key p.in-progress b {
+  background: #597eaa;
+}
+.viewproject .tab-content .key p.complete b {
+  background: #5cb85c;
+}
+.viewproject .tab-content .table-responsive .table {
+  font-family: "Roboto", sans-serif;
+  background: transparent;
+  border-color: black;
+}
+.viewproject .tab-content .table-responsive .table thead {
+  border: none;
+  margin: 0;
+  background: #337AB7;
+  color: white;
+  font-size: 1.5rem;
+}
+.viewproject .tab-content .table-responsive .table thead tr th {
+  border-bottom: none;
+  border-color: black;
+}
+.viewproject .tab-content .table-responsive .table tbody {
+  font-size: 1.3rem;
+}
+.viewproject .tab-content .table-responsive .table tbody tr {
+  background: white;
+}
+.viewproject .tab-content .table-responsive .table tbody tr td {
+  border-color: #337AB7;
+}
+.viewproject .tab-content .table-responsive .table tbody tr td .fa {
+  margin-left: 8px;
+  cursor: pointer;
+}
+.viewproject .tab-content .table-responsive .table tbody tr td button {
+  padding: 0;
+  background: none;
+  border: none;
+  color: #337ab7;
+}
+.viewproject .tab-content .table-responsive .table tbody tr td.full {
+  background: #ddd;
+}
+.viewproject .tab-content .table-responsive .table tbody tr td.full2 {
+  background: #ddd;
+}
+.viewproject .tab-content .table-responsive .table tbody tr.to-do {
+  background: #ddd !important;
+  color: black;
+}
+.viewproject .tab-content .table-responsive .table tbody tr.to-do td {
+  border-color: black;
+}
+.viewproject .tab-content .table-responsive .table tbody tr.complete {
+  background: #5cb85c !important;
+  color: white;
+}
+.viewproject .tab-content .table-responsive .table tbody tr.complete td {
+  border-color: black;
+}
+.viewproject .tab-content .table-responsive .table tbody tr.in-progress {
+  background: #597eaa !important;
+  color: white;
+}
+.viewproject .tab-content .table-responsive .table tbody tr.in-progress td {
+  border-color: black;
+}
+.viewproject .tab-content .table-responsive .table tbody tr.task-row td {
+  font-size: 1.4rem;
+}
+
+p.over {
+  color: red;
+}
+
+p.under {
+  color: green;
+}
+
+.gantt {
+  padding: 60px 0;
+  font-family: "Roboto", sans-serif;
+}
+.gantt .table-responsive .table {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.4rem;
+  border-color: #333;
+  background: white;
+}
+.gantt .table-responsive .table thead {
+  border: none;
+  margin: 0;
+}
+.gantt .table-responsive .table thead tr th {
+  border-bottom: none;
+  border-color: #333;
+}
+.gantt .table-responsive .table tbody tr.to-do {
+  background: #ddd;
+  color: black;
+}
+.gantt .table-responsive .table tbody tr.complete {
+  background: #5cb85c;
+  color: white;
+}
+.gantt .table-responsive .table tbody tr.in-progress {
+  background: #597eaa;
+  color: white;
+}
+.gantt .table-responsive .table tbody tr td {
+  border-color: #333;
+}
+
+.completedOver {
+  color: orange;
+  font-weight: bold;
+}
+
+.completedOk {
+  color: green;
+  font-weight: bold;
+}
+
+.man-risks, .man-milestones, .man-tasks, .man-project, .man-users, .man-projects, .man-finances, .man-issues {
+  min-height: 35px;
+  margin-bottom: 20px;
+  font-family: "Roboto", sans-serif;
+}
+.man-risks select, .man-milestones select, .man-tasks select, .man-project select, .man-users select, .man-projects select, .man-finances select, .man-issues select {
+  height: 35px;
+  background: white;
+  border: none;
+  padding: 5px;
+}
+.man-risks button, .man-milestones button, .man-tasks button, .man-project button, .man-users button, .man-projects button, .man-finances button, .man-issues button {
+  height: 35px;
+  background: #2a3b5c;
+  color: white;
+  border: none;
+  font-weight: bold;
+  padding: 5px 20px;
+}
+.man-risks a, .man-milestones a, .man-tasks a, .man-project a, .man-users a, .man-projects a, .man-finances a, .man-issues a {
+  background: #2a3b5c;
+  color: white;
+  border: none;
+  font-weight: bold;
+  padding: 7px 20px 8px 20px;
+}
+.man-risks input[type=text], .man-milestones input[type=text], .man-tasks input[type=text], .man-project input[type=text], .man-users input[type=text], .man-projects input[type=text], .man-finances input[type=text], .man-issues input[type=text] {
+  height: 35px;
+  background: white;
+  border: none;
+  padding: 5px;
+}
+
+#overlay {
+  position: fixed;
+  left: 0;
+  top: 0;
+  padding: 0;
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+#overlay .form-container {
+  overflow: hidden;
+  position: relative;
+  z-index: 999;
+  top: 50%;
+  transform: translateY(-50%);
+  margin: 0 auto;
+  background: white;
+  -webkit-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.75);
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.75);
+  font-family: "Roboto", sans-serif !important;
+}
+#overlay .form-container.form-container-e {
+  width: 800px;
+}
+#overlay .form-container.form-container-d {
+  width: 400px;
+}
+#overlay .form-container h2 {
+  margin-top: 0;
+}
+#overlay .form-container .dialog-header {
+  overflow: hidden;
+  border-bottom: 1px solid #ddd;
+  padding: 0 30px 0 15px;
+}
+#overlay .form-container .dialog-header h3 {
+  color: #333;
+  margin: 0;
+  font-size: 1.4rem;
+  float: left;
+  font-weight: bold;
+  padding-top: 20px;
+}
+#overlay .form-container .dialog-header .close {
+  margin-top: 10px;
+  padding: 5px 0 10px 10px;
+  font-size: 3rem;
+}
+#overlay .form-container .dialog-header .close:hover, #overlay .form-container .dialog-header .close:active, #overlay .form-container .dialog-header .close:focus {
+  outline: none;
+}
+#overlay .form-container .dialog-content {
+  clear: both;
+  padding: 15px;
+  border-bottom: 1px solid #ddd;
+  text-align: center;
+}
+#overlay .form-container .dialog-content .form-group {
+  text-align: left;
+}
+#overlay .form-container .dialog-content h4 {
+  font-size: 1.6rem;
+  font-weight: bold;
+  padding: 15px;
+  border-bottom: 1px solid #ddd;
+}
+#overlay .form-container .dialog-content p {
+  color: #333;
+  text-align: center;
+  font-size: 1.4rem;
+  margin: 0;
+}
+#overlay .form-container .dialog-content p.ehint {
+  text-align: left;
+  font-size: 1.3rem;
+  margin-bottom: 5px;
+}
+#overlay .form-container .dialog-content label {
+  display: block;
+  text-align: left !important;
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+#overlay .form-container .dialog-content input.form-control, #overlay .form-container .dialog-content select.form-control {
+  font-size: 1.4rem;
+  height: 40px;
+  border: 1px solid #bbb;
+  padding-left: 10px;
+  color: black;
+}
+#overlay .form-container .dialog-content textarea {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.4rem;
+  border: 1px solid #bbb;
+  padding: 10px 0 0 10px;
+  color: black;
+}
+#overlay .form-container .dialog-buttons {
+  overflow: hidden;
+  padding: 10px 5px 0 0;
+  text-align: center;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+#overlay .form-container .dialog-buttons button.delete-yes, #overlay .form-container .dialog-buttons button.update-yes {
+  min-width: 100px;
+  display: inline-block;
+  background: #415A77;
+  font-size: 1.5rem;
+  border: none;
+  color: white;
+  padding: 8px 16px;
+  box-shadow: none;
+}
+#overlay .form-container .dialog-buttons button.delete-yes:hover, #overlay .form-container .dialog-buttons button.update-yes:hover {
+  background: black;
+}
+#overlay .form-container .dialog-buttons button.delete-no, #overlay .form-container .dialog-buttons button.update-no {
+  min-width: 100px;
+  display: inline-block;
+  background: #ddd;
+  box-shadow: none;
+  padding: 8px 16px;
+  font-size: 1.5rem;
+  color: #333;
+  border: none;
+}
+#overlay .form-container .dialog-buttons button.delete-no:hover, #overlay .form-container .dialog-buttons button.update-no:hover {
+  background: #aeaeae;
+}
+
+.files p {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.4rem;
+}
+.files .table-responsive .table {
+  font-family: "Roboto", sans-serif;
+  background: transparent;
+  border-color: black;
+}
+.files .table-responsive .table thead {
+  border: none;
+  margin: 0;
+  background: #337AB7;
+  color: white;
+  font-size: 1.5rem;
+}
+.files .table-responsive .table thead tr th {
+  border-bottom: none;
+  border-color: black;
+}
+.files .table-responsive .table tbody {
+  font-size: 1.3rem;
+}
+.files .table-responsive .table tbody tr {
+  background: white;
+}
+.files .table-responsive .table tbody tr td {
+  border-color: #337AB7;
+}
+.files .table-responsive .table tbody tr td .fa {
+  margin-left: 8px;
+  cursor: pointer;
+}
+.files .table-responsive .table tbody tr td button {
+  padding: 0;
+  background: none;
+  border: none;
+  color: #337ab7;
+}
+
+@media only screen and (max-width: 414px) {
+  .header {
+    text-align: center;
+  }
+  .header h1 {
+    margin: 0 0 15px 0;
+    font-size: 3rem;
+  }
+  .header .logout {
+    display: block;
+    width: 50%;
+    float: left;
+  }
+
+  nav.nav-menu {
+    width: 100%;
+    height: 100%;
+    position: static;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    padding-top: 20px;
+    background: #2a3b5c;
+  }
+
+  .nav-pills > li {
+    border: none;
+    margin: 0;
+    float: none;
+    display: block;
+    font-weight: normal;
+  }
+  .nav-pills > li > a {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.4rem;
+    padding: 15px 30px;
+    font-weight: 600;
+    border-radius: 0;
+    color: white;
+    border-bottom: 1px solid #384f7c;
+  }
+
+  .dashboard .tab-content, .viewproject .tab-content, .admin .tab-content {
+    margin-top: 30px;
+    padding: 0;
+  }
+  .dashboard .tab-content .issues, .viewproject .tab-content .issues, .admin .tab-content .issues {
+    width: 89%;
+  }
+  .dashboard .tab-content .project, .viewproject .tab-content .project, .admin .tab-content .project {
+    width: 89%;
+  }
+
+  .man-risks, .man-milestones, .man-tasks, .man-project, .man-users, .man-projects, .man-finances {
+    min-height: 50px;
+    margin-bottom: 5px;
+  }
+  .man-risks select, .man-milestones select, .man-tasks select, .man-project select, .man-users select, .man-projects select, .man-finances select {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+  .man-risks button, .man-milestones button, .man-tasks button, .man-project button, .man-users button, .man-projects button, .man-finances button {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+  .man-risks input[type=text], .man-milestones input[type=text], .man-tasks input[type=text], .man-project input[type=text], .man-users input[type=text], .man-projects input[type=text], .man-finances input[type=text] {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+
+  .viewproject .table-responsive {
+    border: none;
+  }
+  .viewproject .table-responsive .table {
+    margin-top: 15px;
+    border: 0;
+  }
+  .viewproject .table-responsive .table thead {
+    border: none;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+  .viewproject .table-responsive .table thead tr {
+    display: block;
+  }
+  .viewproject .table-responsive .table thead tr th {
+    width: 100%;
+  }
+  .viewproject .table-responsive .table tbody tr {
+    display: block;
+    margin-bottom: 15px;
+  }
+  .viewproject .table-responsive .table tbody tr td {
+    display: block;
+    text-align: right;
+  }
+  .viewproject .table-responsive .table tbody tr td:before {
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  .viewproject .table-responsive .table tbody tr td:last-child {
+    border-bottom: 0;
+  }
+
+  .dashboard .tab-content .project {
+    width: 100%;
+  }
+  .dashboard .tab-content .project .title {
+    padding: 20px;
+  }
+  .dashboard .tab-content .project .title h3 {
+    margin: 0;
+    font-weight: bold;
+    color: black;
+    font-size: 2rem;
+  }
+  .dashboard .tab-content .project .title h3 .label {
+    font-size: 1.3rem;
+    margin-top: 2px;
+  }
+  .dashboard .tab-content .project .body {
+    padding: 10px 25px;
+    color: #656565;
+    font-family: "Roboto", sans-serif;
+  }
+  .dashboard .tab-content .project .body b {
+    font-weight: normal;
+  }
+  .dashboard .tab-content .project .body a {
+    display: block;
+    float: left;
+    margin-right: 0;
+    font-weight: bold;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .header {
+    height: 60px;
+    padding: 0 20px;
+  }
+  .header .dropdown-menu {
+    border-radius: 0;
+  }
+  .header .dropdown-menu > li > a {
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+  .header .dropdown-toggle {
+    padding: 8px 5px;
+    margin-top: 11px;
+  }
+  .header .dropdown-toggle .fa {
+    padding-right: 3px;
+  }
+  .header h1 {
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    font-size: 2.75rem;
+    float: left;
+    line-height: 60px;
+  }
+}
+.login {
+  height: 100vh;
+  background: #337AB7;
+  font-family: "Roboto", sans-serif;
+}
+.login .content {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  overflow: hidden;
+  width: 500px;
+  margin: 0 auto;
+  background: white;
+  padding: 70px;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.75);
+}
+.login .content .nav-pills {
+  text-align: center;
+}
+.login .content .nav-pills > li {
+  display: block;
+  float: left;
+  width: 50%;
+  margin: 0;
+  font-size: 1.6rem;
+  font-weight: normal;
+}
+.login .content .nav-pills > li > a {
+  border-radius: 0;
+  padding: 10px;
+  height: 40px;
+  color: #333;
+  background: white;
+  border: 1px solid #337AB7;
+}
+.login .content .nav-pills > li.active > a {
+  background: #337AB7;
+  color: white;
+  font-weight: bold;
+}
+.login .content h2 {
+  margin: 0 0 20px 0;
+  text-align: center;
+  font-weight: bold;
+  font-size: 3.5rem;
+}
+.login .content .buttons {
+  text-align: center;
+}
+.login .content .buttons .button {
+  display: inline-block;
+  padding: 10px 35px;
+  cursor: pointer;
+}
+.login .content .buttons .button .login-icon {
+  background: #415A77;
+  border-radius: 50%;
+  height: 75px;
+  width: 75px;
+}
+.login .content .buttons .button .login-icon .fa {
+  display: block;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 3rem;
+  color: white;
+}
+.login .content .buttons .button h3 {
+  margin: 10px 0 0 0;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  color: black;
+}
+.login .content .tab-content {
+  padding-top: 10px;
+}
+.login .content .tab-content form .form-group {
+  margin-bottom: 10px;
+}
+.login .content .tab-content form .form-control {
+  border: none;
+  box-shadow: none;
+  background: #f1f1f1;
+  height: 40px;
+  font-size: 1.5rem;
+  border-radius: 0;
+}
+.login .content .tab-content form .form-control.focus, .login .content .tab-content form .form-control:focus {
+  box-shadow: none;
+}
+.login .content .tab-content form button {
+  width: 100%;
+  background: #337AB7;
+  color: white;
+  border: none;
+  height: 40px;
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+.login .content .tab-content a {
+  margin-top: 15px;
+  display: block;
+  font-size: 1.5rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+.reset {
+  height: 100vh;
+  background: #337AB7;
+  font-family: "Roboto", sans-serif;
+}
+.reset .content {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  overflow: hidden;
+  width: 500px;
+  margin: 0 auto;
+  background: white;
+  padding: 50px;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
+}
+.reset .content h2 {
+  margin: 0 0 30px 0;
+  text-align: center;
+  font-weight: bold;
+  font-size: 3.5rem;
+}
+.reset .content form .form-control {
+  border: none;
+  box-shadow: none;
+  background: #eee;
+  height: 40px;
+  font-size: 1.5rem;
+  border-radius: 0;
+}
+.reset .content form button {
+  width: 100%;
+  background: #337AB7;
+  color: white;
+  border: none;
+  height: 40px;
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 736px) {
+  .login .content {
+    height: 100vh;
+    position: static;
+    top: 0;
+    transform: translateY(0);
+    margin: 0;
+    width: 100%;
+    padding: 60px 20px 20px 20px;
+  }
+}
+@media only screen and (max-width: 667px) {
+  .login .content {
+    padding: 40px 20px 20px 20px;
+  }
+}
+@media only screen and (max-width: 568px) {
+  .login .content {
+    padding: 20px 20px 20px 20px;
+  }
+}
+@media only screen and (max-width: 414px) {
+  .login .content {
+    padding: 180px 20px 20px 20px;
+  }
+  .login .content .nav-pills > li {
+    width: 100%;
+    margin-top: 10px;
+  }
+  .login .content .nav-pills > li > a {
+    padding: 10px;
+  }
+  .login .content h2 {
+    margin: 0 0 10px 0;
+    font-size: 3.5rem;
+  }
+  .login .content .buttons .button {
+    display: inline-block;
+    padding: 10px 35px;
+  }
+  .login .content .buttons .button h3 {
+    margin: 10px 0 0 0;
+  }
+  .login .content .tab-content {
+    padding-top: 10px;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .login .content {
+    padding: 140px 20px 20px 20px;
+  }
+}
+@media only screen and (max-width: 320px) and (max-height: 568px) {
+  .login .content {
+    padding: 110px 20px 20px 20px;
+  }
+}
+@media only screen and (max-width: 320px) and (max-width: 480px) {
+  .login .content {
+    padding: 60px 20px 20px 20px;
+  }
+}
+.client {
+  padding: 40px 0 60px 0;
+}
+.client .alert {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+}
+.client .alert .fa {
+  padding-right: 8px;
+}
+.client h1 {
+  margin-top: 0;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 3.5rem;
+}
+.client .tab-content {
+  margin-top: 60px;
+  padding: 0 0 0 280px;
+}
+.client .tab-content .issues {
+  background: white;
+  width: 85%;
+  padding: 20px;
+  margin-bottom: 30px;
+}
+.client .tab-content .issues h5 {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 2.2rem;
+  margin-bottom: 25px;
+}
+.client .tab-content .issues h6 {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.7rem;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+.client .tab-content .issues p {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.4rem;
+}
+.client .tab-content .issues p a {
+  font-weight: bold;
+}
+.client .tab-content .issues p span {
+  font-size: 1.4rem;
+}
+.client .tab-content .project {
+  font-family: "Roboto", sans-serif;
+  overflow: hidden;
+  margin-bottom: 20px;
+  background: white;
+  width: 85%;
+}
+.client .tab-content .project .title {
+  padding: 25px;
+}
+.client .tab-content .project .title h3 {
+  margin: 0;
+  font-weight: bold;
+  color: black;
+}
+.client .tab-content .project .title h3 .label {
+  font-size: 1.5rem;
+  margin-top: 2px;
+}
+.client .tab-content .project .body {
+  padding: 10px 25px;
+  color: #656565;
+  font-family: "Roboto", sans-serif;
+}
+.client .tab-content .project .body b {
+  font-weight: normal;
+}
+.client .tab-content .project .body a {
+  display: inline-block;
+  margin-right: 25px;
+  font-weight: bold;
+}
+.client .tab-content .project .body .view {
+  display: inline-block;
+  padding: 8px 35px;
+  background: #ccc;
+  color: black;
+  font-weight: bold;
+  margin: 5px 0;
+}
+.client .tab-content .project .body button {
+  font-weight: bold;
+  background: none;
+  border: none;
+  color: #337ab7;
+}
+.client .tab-content .project.open-project {
+  border-top: 4px solid #5cb85c;
+}
+.client .tab-content .project.closed-project {
+  border-top: 4px solid #d9534c;
+}
+
+@media only screen and (max-width: 414px) {
+  .client .tab-content {
+    padding-left: 0;
+  }
+  .client .tab-content .issues {
+    width: 89%;
+  }
+  .client .tab-content .project {
+    width: 89%;
+  }
+}
+.employee {
+  padding: 40px 0 60px 0;
+}
+.employee .alert {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+}
+.employee .alert .fa {
+  padding-right: 8px;
+}
+.employee h1 {
+  margin-top: 0;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 3.5rem;
+}
+.employee .tab-content {
+  margin-top: 60px;
+  padding: 0 0 0 280px;
+  color: black;
+}
+.employee .tab-content .issues {
+  background: white;
+  width: 85%;
+  padding: 20px;
+  margin-bottom: 30px;
+}
+.employee .tab-content .issues h5 {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 2.2rem;
+  margin-bottom: 25px;
+}
+.employee .tab-content .issues h6 {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.7rem;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+.employee .tab-content .issues p {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.4rem;
+}
+.employee .tab-content .issues p a {
+  font-weight: bold;
+}
+.employee .tab-content .issues p span {
+  font-size: 1.4rem;
+}
+.employee .tab-content .project {
+  font-family: "Roboto", sans-serif;
+  overflow: hidden;
+  margin-bottom: 20px;
+  background: white;
+  width: 85%;
+}
+.employee .tab-content .project .title {
+  padding: 20px;
+}
+.employee .tab-content .project .title h3 {
+  margin: 0;
+  font-weight: bold;
+  color: black;
+  font-size: 2.2rem;
+}
+.employee .tab-content .project .title h3 .label {
+  font-size: 1.5rem;
+  margin-top: 2px;
+}
+.employee .tab-content .project .body {
+  padding: 10px 25px;
+  color: #656565;
+  font-family: "Roboto", sans-serif;
+}
+.employee .tab-content .project .body b {
+  font-weight: normal;
+}
+.employee .tab-content .project .body a {
+  display: inline-block;
+  margin-right: 25px;
+  font-weight: bold;
+}
+.employee .tab-content .project .body .view {
+  display: inline-block;
+  padding: 8px 35px;
+  background: #ccc;
+  color: black;
+  font-weight: bold;
+  margin: 5px 0;
+}
+.employee .tab-content .project .body button {
+  font-weight: bold;
+  background: none;
+  border: none;
+  color: #337ab7;
+}
+.employee .tab-content .project.open-project {
+  border-top: 4px solid #5cb85c;
+}
+.employee .tab-content .project.closed-project {
+  border-top: 4px solid #d9534c;
+}
+
+.messages {
+  padding: 40px 0 60px 0;
+}
+.messages nav {
+  width: 250px;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 100;
+  padding-top: 61px;
+  background: #2a3b5c;
+}
+.messages .nav-pills > li {
+  border: none;
+  margin: 0;
+  float: none;
+  display: block;
+  font-weight: normal;
+}
+.messages .nav-pills > li > a {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+  padding: 15px 30px;
+  font-weight: 600;
+  border-radius: 0;
+  color: white;
+}
+.messages .nav-pills > li.active > a {
+  border: none;
+  background: #1f2c44;
+  color: white;
+}
+.messages .nav-pills > li:hover > a {
+  background: #1f2c44;
+}
+.messages .tab-content {
+  margin-top: 60px;
+  padding: 0 0 0 60px;
+}
+.messages .tab-content .alert {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+}
+.messages .tab-content .alert .fa {
+  padding-right: 8px;
+}
+.messages .tab-content h2 {
+  font-weight: bold;
+  margin-bottom: 15px;
+  font-family: "Roboto", sans-serif;
+}
+.messages .tab-content h3 {
+  font-weight: bold;
+  font-size: 1.6rem;
+}
+.messages .tab-content input.form-control, .messages .tab-content select.form-control {
+  font-family: "Roboto", sans-serif;
+  border-radius: 0;
+  box-shadow: none;
+  font-size: 1.5rem;
+  height: 40px;
+}
+.messages .tab-content textarea {
+  font-family: "Roboto", sans-serif;
+  border-radius: 0;
+  box-shadow: none;
+  font-size: 1.5rem;
+}
+.messages .tab-content button[type=submit] {
+  font-weight: bold;
+  font-size: 1.7rem;
+  padding: 8px 30px;
+  background: #415A77;
+  border: 1px solid #415A77;
+  font-family: "Roboto", sans-serif;
+  color: white;
+}
+.messages .tab-content p.choose {
+  display: inline;
+  font-family: "Roboto", sans-serif;
+  margin-left: 20px;
+  font-weight: bold;
+}
+.messages .tab-content button#deletemessages, .messages .tab-content button#deletemessages2 {
+  padding: 0 15px;
+  color: white;
+  background: #415A77;
+  font-weight: bold;
+  height: 26px;
+  border: none;
+  margin-left: 8px;
+}
+.messages .tab-content button#archivemessages, .messages .tab-content button#activatemessages {
+  padding: 0 15px;
+  color: #333;
+  background: #ddd;
+  font-weight: bold;
+  height: 26px;
+  border: none;
+  margin-left: 8px;
+}
+.messages .tab-content label {
+  font-size: 1.4rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  height: 30px;
+}
+.messages .tab-content label #selectall, .messages .tab-content label #selectarchive {
+  margin-right: 5px;
+}
+.messages .tab-content .conversation {
+  overflow: hidden;
+  margin-bottom: 1px;
+  font-family: "Roboto", sans-serif;
+  max-height: 40px;
+  padding: 10px;
+}
+.messages .tab-content .conversation:hover {
+  cursor: pointer;
+  background: #f1f1f1;
+}
+.messages .tab-content .conversation .selectmessage, .messages .tab-content .conversation .selectitem {
+  display: inline;
+  margin: 0 8px 0 0;
+}
+.messages .tab-content .conversation .selectmessage:focus, .messages .tab-content .conversation .selectmessage:active, .messages .tab-content .conversation .selectitem:focus, .messages .tab-content .conversation .selectitem:active {
+  outline: none;
+}
+.messages .tab-content .conversation h4 {
+  display: inline;
+  font-weight: normal;
+  font-size: 1.4rem;
+  margin: 0 0 5px 0;
+  text-transform: capitalize;
+  padding: 10px 0;
+}
+.messages .tab-content .conversation h4 a {
+  display: inline-block;
+  width: 200px;
+  color: #333;
+}
+.messages .tab-content .conversation h4 a:hover {
+  text-decoration: none;
+}
+.messages .tab-content .conversation h4 b {
+  font-weight: normal;
+}
+.messages .tab-content .conversation p {
+  font-size: 1.3rem;
+  margin: 10px 0 0 10px;
+  color: #333;
+}
+.messages .tab-content .conversation p b {
+  font-size: 1.2rem;
+}
+.messages .tab-content .conversation p b.them {
+  color: #415A77;
+}
+.messages .tab-content .conversation p.them {
+  color: #415A77;
+}
+.messages .tab-content .conversation .reply {
+  clear: both;
+  margin: 20px 0 0 10px;
+  border-top: 1px dashed #aaa;
+  padding-top: 10px;
+}
+.messages .tab-content .conversation .reply p {
+  margin: 0;
+}
+.messages .tab-content .conversation .new-reply {
+  clear: both;
+  display: block;
+  margin: 0 0 0 10px;
+  padding-top: 15px;
+  font-size: 1.3rem;
+}
+.messages .tab-content .conversation .new-reply .form-group {
+  margin-bottom: 5px;
+}
+.messages .tab-content .conversation .new-reply .form-group .form-control {
+  box-shadow: none;
+  border-radius: 0;
+  font-size: 1.3rem;
+}
+.messages .tab-content .conversation .new-reply button.reply-button {
+  background: #415A77;
+  color: white;
+  border: none;
+  font-weight: bold;
+  padding: 4px 15px;
+  font-size: 1.4rem;
+}
+.messages .tab-content .conversation .new-reply button.reply-button:hover {
+  background: #0D1B2A;
+}
+.messages .tab-content .conversation.active {
+  background: #f7f7f7;
+  max-height: 750px;
+}
+
+.admin .table-responsive .table {
+  font-family: "Roboto", sans-serif;
+  background: transparent;
+  border-color: black;
+}
+.admin .table-responsive .table thead {
+  border: none;
+  margin: 0;
+  background: #337AB7;
+  color: white;
+  font-size: 1.5rem;
+}
+.admin .table-responsive .table thead tr th {
+  border-bottom: none;
+  border-color: black;
+}
+.admin .table-responsive .table tbody {
+  font-size: 1.3rem;
+}
+.admin .table-responsive .table tbody tr {
+  background: white;
+}
+.admin .table-responsive .table tbody tr td {
+  border-color: #337AB7;
+}
+.admin .table-responsive .table tbody tr td.user-active {
+  color: green;
+}
+.admin label {
+  font-family: "Roboto", sans-serif;
+}
+
+@media only screen and (max-width: 414px) {
+  .admin .table-responsive {
+    border: none;
+  }
+  .admin .table-responsive .table {
+    margin-top: 15px;
+    border: 0;
+  }
+  .admin .table-responsive .table thead {
+    border: none;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+  .admin .table-responsive .table thead tr {
+    display: block;
+  }
+  .admin .table-responsive .table thead tr th {
+    width: 100%;
+  }
+  .admin .table-responsive .table tbody tr {
+    display: block;
+    margin-bottom: 15px;
+  }
+  .admin .table-responsive .table tbody tr td {
+    display: block;
+    text-align: right;
+  }
+  .admin .table-responsive .table tbody tr td:before {
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  .admin .table-responsive .table tbody tr td:last-child {
+    border-bottom: 0;
+  }
+}
+@media print {
+  .container {
+    width: 100%;
+  }
+}
+body {
+  margin: 0;
+  padding: 0;
+  background: #E9EBEE;
+}
+
+html, body, .container-fluid {
+  height: 100%;
+}
+
+body > .container-fluid {
+  height: auto;
+  min-height: 100%;
+}
+
+.container-fluid {
+  padding-bottom: 80px;
+}
+
+.error404 {
+  overflow: hidden;
+  background: #337AB7;
+  height: 100vh;
+  color: white;
+  font-family: "Roboto", sans-serif;
+}
+.error404 .content {
+  position: relative;
+  margin: 0 auto;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+}
+.error404 .content h1 {
+  font-size: 10rem;
+  font-weight: bold;
+}
+.error404 .content p {
+  font-size: 2rem;
+}
+.error404 .content p a {
+  font-weight: bold;
+  color: white;
+}
+
+p.error {
+  color: #a94442;
+  font-weight: bold;
+  margin-top: 10px;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.4rem;
+  text-align: center;
+}
+p.error:before {
+  content: "";
+  color: #a94442;
+  padding-right: 5px;
+  font-family: FontAwesome;
+  position: relative;
+  left: 0;
+}
+
+p.error2 {
+  color: #8a6d3b;
+  font-weight: bold;
+  text-align: left !important;
+  margin: 0 0 10px 0 !important;
+}
+p.error2:before {
+  content: "";
+  color: #8a6d3b;
+  padding-right: 5px;
+  font-family: FontAwesome;
+  position: relative;
+  left: 0;
+}
+
+p.error3 {
+  color: #31708f;
+  font-weight: bold;
+  text-align: left !important;
+  margin: 0 0 10px 0 !important;
+}
+p.error3:before {
+  content: "";
+  color: #31708f;
+  padding-right: 5px;
+  font-family: FontAwesome;
+  position: relative;
+  left: 0;
+}
+
+p.ok {
+  color: #3c763d;
+  font-weight: bold;
+  text-align: left !important;
+  margin: 0 0 10px 0 !important;
+}
+p.ok:before {
+  content: "";
+  color: #3c763d;
+  padding-right: 5px;
+  font-family: FontAwesome;
+  position: relative;
+  left: 0;
+}
+
+footer {
+  overflow: hidden;
+  position: relative;
+  margin-top: -80px;
+  height: 80px;
+  background: #415A77;
+  color: white;
+}
+footer p {
+  margin: 0;
+  line-height: 80px;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.4rem;
+  font-weight: bold;
+}

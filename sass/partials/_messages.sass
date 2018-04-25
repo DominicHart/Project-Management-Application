@@ -1,0 +1,168 @@
+.messages
+  padding: 40px 0 60px 0
+  nav
+    width: 250px
+    height: 100%
+    position: fixed
+    left: 0
+    top: 0
+    z-index: 100
+    padding-top: 61px
+    //text-align: center
+    //background: #1B263B
+    background: #2a3b5c
+  .nav-pills
+    >li
+      border: none
+      margin: 0
+      float: none
+      display: block
+      font-weight: normal
+      >a
+        font-family: $font
+        font-size: 1.5rem
+        padding: 15px 30px
+        font-weight: 600
+        border-radius: 0
+        color: white
+      &.active
+        >a
+          border: none
+          background: #1f2c44
+          color: white
+      &:hover
+        >a
+          background: #1f2c44
+  .tab-content
+    margin-top: 60px
+    padding: 0 0 0 60px
+    .alert
+      font-family: $font
+      font-size: 1.5rem
+      .fa
+        padding-right: 8px
+    h2
+      font-weight: bold
+      margin-bottom: 15px
+      font-family: $font
+    h3
+      font-weight: bold
+      font-size: 1.6rem
+    input.form-control, select.form-control
+      font-family: $font
+      border-radius: 0
+      box-shadow: none
+      font-size: 1.5rem
+      height: 40px
+    textarea
+      font-family: $font
+      border-radius: 0
+      box-shadow: none
+      font-size: 1.5rem
+    button[type=submit]
+      font-weight: bold
+      font-size: 1.7rem
+      padding: 8px 30px
+      background: $theme
+      border: 1px solid $theme
+      font-family: $font
+      color: white
+    p.choose
+      display: inline
+      font-family: $font
+      margin-left: 20px
+      font-weight: bold
+    button#deletemessages, button#deletemessages2
+      padding: 0 15px
+      color: white
+      background: $theme
+      font-weight: bold
+      height: 26px
+      border: none
+      margin-left: 8px
+    button#archivemessages, button#activatemessages
+      padding: 0 15px
+      color: #333
+      background: #ddd
+      font-weight: bold
+      height: 26px
+      border: none
+      margin-left: 8px
+    label
+      font-size: 1.4rem
+      font-family: $font
+      font-weight: bold
+      height: 30px
+      #selectall, #selectarchive
+        margin-right: 5px
+    .conversation
+      overflow: hidden
+      margin-bottom: 1px
+      font-family: $font
+      max-height: 40px
+      //border-bottom: 1px solid #ddd
+      padding: 10px
+      &:hover
+        cursor: pointer
+        background: #f1f1f1
+      .selectmessage, .selectitem
+        display: inline
+        margin: 0 8px 0 0
+        &:focus, &:active
+          outline: none
+      h4
+        display: inline
+        font-weight: normal
+        font-size: 1.4rem
+        margin: 0 0 5px 0
+        text-transform: capitalize
+        padding: 10px 0
+        a
+          display: inline-block
+          width: 200px
+          color: #333
+          &:hover
+            text-decoration: none
+        b
+          font-weight: normal
+      p
+        font-size: 1.3rem
+        margin: 10px 0 0 10px
+        color: #333
+        b
+          font-size: 1.2rem
+          &.them
+            color: $theme
+        &.them
+          color: $theme
+      .reply
+        clear: both
+        margin: 20px 0 0 10px
+        border-top: 1px dashed #aaa
+        padding-top: 10px
+        p
+          margin: 0
+      .new-reply
+        clear: both
+        display: block
+        margin: 0 0 0 10px
+        padding-top: 15px
+        font-size: 1.3rem
+        .form-group
+          margin-bottom: 5px
+          .form-control
+            box-shadow: none
+            border-radius: 0
+            font-size: 1.3rem
+        button.reply-button
+          background: $theme
+          color: white
+          border: none
+          font-weight: bold
+          padding: 4px 15px
+          font-size: 1.4rem
+          &:hover
+            background: #0D1B2A
+      &.active
+        background: #f7f7f7
+        max-height: 750px

@@ -1,0 +1,60 @@
+.admin
+  .table-responsive
+    .table
+      font-family: $font
+      background: transparent
+      border-color: black
+      thead
+        border: none
+        margin: 0
+        background: #337AB7
+        color: white
+        font-size: 1.5rem
+        tr
+          th
+            border-bottom: none
+            border-color: black
+      tbody
+        font-size: 1.3rem
+        tr
+          background: white
+          td
+            border-color: #337AB7
+            &.user-active
+              color: green
+  label
+    font-family: $font
+@media only screen and (max-width: 414px)
+  .admin
+    .table-responsive
+      border: none
+      .table
+        margin-top: 15px
+        border: 0
+        thead
+          border: none
+          clip: rect(0 0 0 0)
+          height: 1px
+          margin: -1px
+          overflow: hidden
+          padding: 0
+          position: absolute
+          width: 1px
+          tr
+            display: block
+            th
+              width: 100%
+        tbody
+          tr
+            display: block
+            margin-bottom: 15px
+            td
+              display: block
+              text-align: right
+              &:before
+                content: attr(data-label)
+                float: left
+                font-weight: bold
+                text-transform: uppercase
+              &:last-child
+                border-bottom: 0
